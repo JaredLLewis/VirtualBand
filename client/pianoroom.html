@@ -1,0 +1,120 @@
+<html>
+<head>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js">
+
+</script>
+
+<script type='text/javascript' src='js/clientSocketCode.js'>
+</script>
+
+<!--Style of piano -->
+ <link type="text/css" rel="stylesheet" href="style/piano.css"/>
+ 
+ <!--Jquery import -->
+ <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+<!--ToneJS import, allows us to easily play professional audio clips with effect and cool stuff -->
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+<script src="https://unpkg.com/tone"></script>
+<script src="https://unpkg.com/@tonejs/ui"></script>
+
+
+
+</head>
+
+
+<script>
+var noteOrder = {
+  "C" : "flat",
+  "C#" : "sharp",
+  "D" : "flat",
+  "D#" : "sharp",
+  "E" : "flat",
+  "F" : "flat",
+  "F#" : "sharp"
+};
+
+
+
+</script>
+
+<button>Increase octave </button>
+<button>Decrease octave </button>
+<button>Increase note </button>
+<button>Decrease note </button>
+
+<body>
+<div id="pianoItem">
+  <section id="wrap">
+    <section id="main">
+      <div class="keys">
+        <div data-key="65" class="key" data-note="C">
+            <span class="hints">A</span>
+        </div>
+        <div data-key="87" class="key sharp" data-note="C#">
+            <span class="hints">W</span>
+        </div>
+        <div data-key="83" class="key" data-note="D">
+            <span class="hints">S</span>
+        </div>
+        <div data-key="69" class="key sharp" data-note="D#">
+            <span class="hints">E</span>
+        </div>
+        <div data-key="68" class="key" data-note="E">
+            <span class="hints">D</span>
+        </div>
+        <div data-key="70" class="key" data-note="F">
+            <span class="hints">F</span>
+        </div>
+        <div data-key="84" class="key sharp" data-note="F#">
+            <span class="hints">T</span>
+        </div>
+        <div data-key="71" class="key" data-note="G">
+            <span class="hints">G</span>
+        </div>
+        <div data-key="89" class="key sharp" data-note="G#">
+            <span class="hints">Y</span>
+        </div>
+        <div data-key="72" class="key" data-note="A">
+            <span class="hints">H</span>
+        </div>
+        <div data-key="85" class="key sharp" data-note="A#">
+            <span class="hints">U</span>
+        </div>
+        <div data-key="74" class="key" data-note="B">
+            <span class="hints">J</span>
+        </div>
+        <div data-key="75" class="key" data-note="C">
+            <span class="hints">K</span>
+        </div>
+        <div data-key="79" class="key sharp" data-note="C#">
+            <span class="hints">O</span>
+        </div>
+        <div data-key="76" class="key" data-note="D">
+            <span class="hints">L</span>
+        </div>
+        <div data-key="80" class="key sharp" data-note="D#">
+            <span class="hints">P</span>
+        </div>
+        <div data-key="186" class="key" data-note="E">
+            <span class="hints">;</span>
+        </div>
+		
+      </div>
+
+
+      </section>
+  </section>
+</div>
+</body>
+
+<script type='text/javascript' src='js/pianoListener.js'>
+
+
+</script>
+
+
+</html>
